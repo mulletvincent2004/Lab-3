@@ -1,0 +1,15 @@
+package Lab3;
+
+public class Lab3 {
+    public static String addStars(String str) {
+        if (str.length() <= 1) {
+            return str;
+        } else {
+            return str.charAt(0) + "*" + addStars(str.substring(1));
+        }
+    }
+
+    public static void main(String[] args) {
+        System.out.println(addStars("ashley"));
+    }
+}
